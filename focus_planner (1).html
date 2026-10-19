@@ -290,6 +290,7 @@ document.getElementById('timerStart').onclick=startTimer;
 document.getElementById('timerReset').onclick=()=>{stopTimer();timerRemaining=timerTotal;renderTimer()};
 
 
+  
 const notifiedReminders=new Set();
 function checkTaskReminders(){
  if(!('Notification'in window)||Notification.permission!=='granted')return;
